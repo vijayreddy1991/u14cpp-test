@@ -12,3 +12,4 @@ jobs:
           - autoconf --version
           - automake --version
           - ccache --version
+          - clang --version
