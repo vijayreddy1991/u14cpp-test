@@ -1,14 +1,14 @@
 jobs:
-- name: u14cppall-test
- type: runSh
- steps:
-   - TASK:
-       runtime:
-         options:
-           imageName: "drydock/u14cppall"
-           imageTag: master
-       script:
-          - gcc --version
-          - autoconf --version
-          - automake --version
-          - ccache --version
+ - name: u14cppall-test
+  type: runSh
+  steps:
+    - TASK:
+        runtime:
+          options:
+            imageName: "drydock/u14cppall"
+            imageTag: master
+        script:
+           - gcc --version
+           - autoconf --version
+           - automake --version
+           - ccache --version
